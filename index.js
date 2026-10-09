@@ -2,9 +2,11 @@ const express = require("express");
 require("dotenv").config();
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
 const authRouter = require("./Routes/AuthRouter");
 const studioRouter = require("./Routes/StudioRouter");
 require("./Models/db");
+
 const app = express();
 
 const PORT = process.env.PORT || 8080;
